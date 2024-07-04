@@ -2,6 +2,13 @@ Final Project for Architecture Organization & Algorithm Complexity.
 
 Folder contains Python code for opening the Flask Server and the Fisherface Algorithm
 
+Libraries required to install:
+opencv-contrib-python
+cv2
+numpy
+requests
+flask
+
 <tt>
 SSSSSSSSSS###@@#S###S??***%%?******?S????????%SSS%%%%%%%%%%%%%%%SSSSSSSSSSSSSSSSSSSSS###############
 SSSSSSSSSS###@@#S###S??***%%?******?S?**????%###S%%%%%%%%%%%%%%%SSSSSSSSSSSSSSSSSSSSS###############
