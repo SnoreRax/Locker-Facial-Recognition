@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Face Recognition</h1>
+    
+    <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="files" multiple required><br>
+        <button type="submit">Upload Images</button>
+    </form>
+    
+    <form id="train-form" action="/train" method="post">
+        <button type="submit">Train Model</button>
+    </form>
+    
+    <h2 id="training-status">Upload images and train the model</h2>
+    
+    <h2>Recognition Result</h2>
+    <img id="captured-image" src="{{ url_for('video_feed') }}" alt="Captured Image" width="640" height="480"><br>
+    
+    <script>
+        function checkTrainingStatus() {
+            fetch('/training_status')
+            .then(response => response.json())
+            .then(data => {
+                const statusElement = document.getElementById('training-status');
+                if (data.model_trained) {
+                    statusElement.textContent = 'Training complete';
+                } else {
+                    statusElement.textContent = 'Upload images and train the model';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        // Check training status every 2 seconds
+        setInterval(checkTrainingStatus, 2000);
+    </script>
+</body>
+</html>
