@@ -1,6 +1,6 @@
 The following is our final project for Algorithms and Complexities and Architecture and Organization.
 <br/>
-The members included are as follows:
+The members included are as follows:<br/>
 Alboroto, Rojer Angelo <br/>
 Rjindorp, Nathaniel <br/>
 Sian, David Anthony <br/>
