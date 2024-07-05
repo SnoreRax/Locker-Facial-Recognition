@@ -1,10 +1,10 @@
 The following is our final project for Algorithms and Complexities and Architecture and Organization.
-
+<br/>
 The members included are as follows:
-Alboroto, Rojer Angelo
-Rjindorp, Nathaniel
-Sian, David Anthony
-
+Alboroto, Rojer Angelo <br/>
+Rjindorp, Nathaniel <br/>
+Sian, David Anthony <br/>
+<br/>
 The Archi---Algo-Final-Product-main folder contains our Python code and the CameraWebServer Folder contains our Arduino code.
 
 The Python code is responsible for running the required Flask server and for the use of the FisherFace Algorithm, while
