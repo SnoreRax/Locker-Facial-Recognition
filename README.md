@@ -1,4 +1,4 @@
-The following is our final project for Algorithms and Complexities and Architecture and Organization.
+The following is our final project for Algorithms and Complexities and Architecture and Organization. <br/>
 <br/>
 The members included are as follows:<br/>
 Alboroto, Rojer Angelo <br/>
